@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacked</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: black;
+            color: lime;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            animation: flicker 0.1s infinite alternate;
+        }
+
+        @keyframes flicker {
+            0% {
+                opacity: 0.8;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .hack-text {
+            font-size: 2em;
+            border: 2px solid lime;
+            padding: 10px;
+            background-color: black;
+            box-shadow: 0 0 10px lime;
+            letter-spacing: 3px;
+        }
+
+        .glitch {
+            color: red;
+            position: relative;
+            display: inline-block;
+            font-size: 1.5em;
+            animation: glitch 0.5s infinite;
+        }
+
+        @keyframes glitch {
+            0% {
+                top: 0;
+                left: 0;
+                transform: none;
+                opacity: 1;
+            }
+            20% {
+                top: -5px;
+                left: 5px;
+                transform: rotate(2deg);
+                opacity: 0.8;
+            }
+            40% {
+                top: 5px;
+                left: -5px;
+                transform: rotate(-2deg);
+                opacity: 0.8;
+            }
+            60% {
+                top: 0;
+                left: 0;
+                transform: none;
+                opacity: 1;
+            }
+            80% {
+                top: 5px;
+                left: -5px;
+                transform: rotate(2deg);
+                opacity: 0.8;
+            }
+            100% {
+                top: -5px;
+                left: 5px;
+                transform: rotate(-2deg);
+                opacity: 0.8;
+            }
+        }
+
+        /* Footer styles */
+footer {
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    color: lime;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+        footer:hover {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+        <div class="hack-container">
+       
+<div class="hack-text">
+     <span class="glitch">Hacked</span>   By B A N D I T S - V I I 
+</div>
+
+<!-- Footer -->
+<footer>
+    Powered By <a href="https://www.offensiox.com" target="_blank">OffensioX</a>
+</footer>
+
+<script>
+    // Add any additional JS for more interactivity or effects
+</script>
+</body>
+</html>
